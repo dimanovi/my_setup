@@ -1,0 +1,7 @@
+[user]
+	name = Dmitri Novikov
+	email = dimanovi@hotmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
