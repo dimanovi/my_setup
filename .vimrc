@@ -1,9 +1,9 @@
 colorscheme koehler
-set nu
-set ts=4
-set sts=4
-set sw=4
-set et
+set number
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 
 " disable octals with C-a and C-x
 set nrformats=
