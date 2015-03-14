@@ -59,7 +59,8 @@ fi
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    #PS1='${debian_chroot:+($debian_chroot)}\u@\h:w\$ '
+    PS1='\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -113,6 +114,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# to map capslock to control on Debian: append to /etc/default/keyboard:
+# to map capslock to control on Debian, append to /etc/default/keyboard:
 # XKBOPTIONS="lvl3:ralt_alt,compose:menu,ctrl:nocaps"
 # then run: sudo dpkg-reconfigure keyboard-configuration
+# to modify the terminal font, run
+# sudo dpkg-reconfigure console-setup 
+
+PATH="~/bin:$PATH"
