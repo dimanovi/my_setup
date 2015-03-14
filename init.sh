@@ -1,5 +1,5 @@
 cd
-mv .bashrc .old.bashrc
+mv .bashrc .original.bashrc
 ln -s .my_setup/.bash_aliases .bash_aliases
 ln -s .my_setup/.bashrc .bashrc
 ln -s .my_setup/.gitconfig .gitconfig
