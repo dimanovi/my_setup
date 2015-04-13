@@ -121,3 +121,4 @@ fi
 # sudo dpkg-reconfigure console-setup 
 
 PATH="~/bin:$PATH"
+VISUAL=vim
